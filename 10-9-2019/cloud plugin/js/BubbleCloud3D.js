@@ -278,3 +278,4 @@ jQuery.fn.to3DBubbleCloud = function(options) {
             }).addClass("borderFrame");
     });
 };
+$(".frame").create3DBubbleCloud();
