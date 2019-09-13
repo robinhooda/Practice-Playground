@@ -5,20 +5,38 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/BubbleCloud3D.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <ul id="frame" class="frame">
-              <li>HTML</li>
-              <li>Css</li>
-              <li>Javascript</li>
-              <li>C</li>
-            </ul>
-            
+    <div id="tagcloud"></div>
+    <svg width="128" height="138" viewBox="0 0 128 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24.54 28.3772L29.0375 34.885L7.73797 101.479L0.49933 101.483L24.54 28.3772Z" fill="#FFFBFB"/>
+        <path d="M99.5001 35.4999L103.5 29L127 102.168L120.871 102.168L99.5001 35.4999Z" fill="#FFFBFB"/>
+        <circle cx="68" cy="32" r="25" fill="#FF2E8E"/>
+        <circle cx="59.5" cy="106.5" r="31.5" fill="#FF2E8E"/>
+        <circle cx="68" cy="32" r="19" fill="#18214A"/>
+        <circle cx="59.5" cy="106.5" r="25.5" fill="#18214A"/>
+        <rect x="50" y="33" width="42" height="24" fill="#18214A"/>
+        <rect x="80" y="33" width="16" height="10" fill="#18214A"/>
+        <rect x="105" width="16" height="10" fill="#18214A"/>
+        <path d="M49.0002 48.0001L47.9151 35L84.5 87.5L79.1383 90.0516L49.0002 48.0001Z" fill="#FF2E8E"/>
+        <path d="M100.32 34.3501L105.235 37.7916L82 70.5L78.4386 65.6004L100.32 34.3501Z" fill="#FFFBFB"/>
+        <rect x="38.6729" y="76.5664" width="25.0697" height="17.537" transform="rotate(-35 38.6729 76.5664)" fill="#18214A"/>
+        <rect x="60.9834" y="80.2886" width="8.98088" height="20.7849" transform="rotate(-35 60.9834 80.2886)" fill="#18214A"/>
+        <circle cx="58.5" cy="105.5" r="16.5" fill="white"/>
+        <rect x="23.3379" y="37.179" width="6" height="76.9104" transform="rotate(-35 23.3379 37.179)" fill="#FFFBFB"/>
+        <rect x="49.1387" y="91.9026" width="11.523" height="4.54303" transform="rotate(-35 49.1387 91.9026)" fill="#FFFBFB"/>
+        <path d="M69 105.5C69 111.299 64.299 116 58.5 116C52.701 116 48 111.299 48 105.5C48 99.701 52.701 95 58.5 95C64.299 95 69 99.701 69 105.5Z" fill="#18214A"/>
+        <path d="M52.8057 96.6907L61.0304 90.9316L67.4827 100.146L59.2579 105.905L52.8057 96.6907Z" fill="#18214A"/>
+        </svg>
+        
 
     </body>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="js/BubbleCloud3D.js"></script>
+    <script src="js/jquery.svg3dtagcloud.min.js"></script>
+    <script>
+    $('#tag-cloud').svg3DTagCloud();
+</script>
 </html>
