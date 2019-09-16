@@ -15,8 +15,8 @@ class Player{
         ctx.fill();
     }
     move(ctx){
-        // this.x = this.x +- speed;
-        // this.y = this.y +-speed;
+         this.x = this.x +- speed;
+         this.y = this.y +-speed;
     }
 
 }
@@ -46,12 +46,35 @@ class Game{
         return players;   
     }
     play(){
-        // this.ctx.clear;
-        this.players.forEach(player=>{ player.draw(this.ctx);});
-        // setTimeout(this.play());
+            this.ctx.clearRect(0, 0, this.width, this.height); // just clear the whole game area
+            this.players.forEach(player=>{ player.draw(this.ctx);});
+            requestAnimationFrame(this.play.bind(this));
     }
     keyPress(e){
-        console.log(e.keyCode);
+        let keys=e.keyCode;
+        let red = this.players[0];
+        let black= this.players[1];
+        switch(keys)
+        {
+            case 65: red.x=red.x-1;
+                     break;
+            case 68: red.x=red.x+1;
+                     break;
+            case 87: red.y=red.y-1;
+                     break;
+            case 83: red.y=red.y+1;
+                    break;
+            case 37: black.x=black.x-1;
+                    break;
+            case 39: black.x=black.x+1;
+                    break;
+            case 38: black.y=black.y-1;
+                    break;
+            case 40: black.y=black.y+1;
+                    break;
+        }
+        // }[65, 68, 87, 83] : [37, 39, 38, 40];
+        // console.log(e.keyCode);
         // What is the key , 
         // I will adjust the x, y value of thief and police
         // [-x,+x,-y,+y]
