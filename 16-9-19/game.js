@@ -3,7 +3,7 @@ class Player{
         this.name = name;
         this.type = type;
         this.size = size;
-        this.arrows = [];
+        this.arrows = type == "Police" ? [65, 68, 87, 83] : [37, 39, 38, 40];
         this.color = type == "Police" ? "red" : "black";
         this.x = x;
         this.y = y;
@@ -18,9 +18,9 @@ class Player{
         // this.x = this.x +- speed;
         // this.y = this.y +-speed;
     }
-​
+
 }
-​
+
 class Game{
     constructor(canvas,width, height){
         this.canvas = canvas;
@@ -30,6 +30,7 @@ class Game{
         canvas.height = height;
         this.ctx = canvas.getContext('2d');
         this.players = this.createPlayers(2);
+        document.addEventListener('keydown',this.keyPress.bind(this));
     }
     createPlayers(num){
         let players = [];
@@ -49,8 +50,14 @@ class Game{
         this.players.forEach(player=>{ player.draw(this.ctx);});
         // setTimeout(this.play());
     }
+    keyPress(e){
+        console.log(e.keyCode);
+        // What is the key , 
+        // I will adjust the x, y value of thief and police
+        // [-x,+x,-y,+y]
+    }
 }
-​
+
 function initGame() {
     // alert("Onload");
     let canvas = document.getElementById('game');
