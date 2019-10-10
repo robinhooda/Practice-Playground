@@ -3,12 +3,14 @@
 // console.log(name);
 // name="king"
 // console.log(name);
- 
+
+// *********splice**********
 // let numbers=['one','two','three'];
 // console.log(numbers);
 // numbers.splice(1,2,'robin','hooda','qwerty')
 // console.log(numbers);
-
+ 
+// *********functions********
 // let sayHello= function(name) {
 //     console.log(`hii ${name}`);
 // }
@@ -20,11 +22,18 @@
 // }
 // fullName('Robin','Hooda');
 
-let add = function(num1,num2){
-    let sum=num1+num2;
-    return sum;
+// let add = function(num1,num2){
+//     let sum=num1+num2;
+//     return sum;
+// }
+// let result=add(7,134)
+// console.log(`the answer is ${result}`)
+
+let User = function(name,course){
+    return 'Hello '+name+' and you have taken '+course;
 }
-let result=add(7,134)
-console.log(`the answer is ${result}`)
+console.log(User('Robin','MERN full stack'))
+
+
 
 
