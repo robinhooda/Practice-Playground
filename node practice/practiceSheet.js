@@ -29,10 +29,25 @@
 // let result=add(7,134)
 // console.log(`the answer is ${result}`)
 
-let User = function(name,course){
-    return 'Hello '+name+' and you have taken '+course;
-}
-console.log(User('Robin','MERN full stack'))
+// let User = function(name,course){
+//     return 'Hello '+name+' and you have taken '+course;
+// }
+// console.log(User('Robin','MERN full stack'))
+
+//const students=['robin','mohit','rohan','rajveer','roshan']
+// students.forEach( function() {
+//     console.log(students)
+// });
+
+// students.forEach( function(student) {
+//     console.log(student)
+// });
+
+const months=['jan','Feb','Mar','April','May','June']
+months.forEach(function(monthName,number){
+     console.log(`Month Number ${number+1}: ${monthName}`)
+})
+//console.log(students);
 
 
 
