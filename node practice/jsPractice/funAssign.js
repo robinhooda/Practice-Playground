@@ -12,7 +12,7 @@
     else if(myPercent>60)
         myGrade='D';
     else 
-        myGrade='E';
+        myGrade='Fail';
 
     return `Your Grade is ${myGrade} and your percentage is ${myPercent}`
  }
