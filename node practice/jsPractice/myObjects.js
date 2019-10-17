@@ -3,3 +3,4 @@ let studentId = {
     rollno: 34,
     Address: "Haryana"
 }
+console.log(studentId)
