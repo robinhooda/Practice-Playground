@@ -18,7 +18,7 @@ let student2 = {
 //     console.log(`${myObject.name} have secured ${myObject.marks+2}`)
 // }
 // changeMarks(student1);
-// changeMarks(student2)
+// changeMarks(svftudent2)
 
 let changeMarks = function(myObject){
     return {
@@ -29,6 +29,7 @@ let changeMarks = function(myObject){
 let math = changeMarks(student1)
 let hindi = changeMarks(student1.hindi)
 console.log(math.hindi)
+console.log(math.math)
 
 
 
