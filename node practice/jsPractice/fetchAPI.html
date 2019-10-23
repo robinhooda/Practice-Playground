@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+      <button id="myBtn">
+              Click here to fetch the city temp
+      </button>
+      <script>
+          document.getElementById("myBtn").onclick=() =>{
+              var x= fetch("http://api.openweathermap.org/data/2.5/weather?q=london&APPID=b3359c3824b498383e5b65bcddc41d9e");
+              console.log(x)
+          }
+      </script>
+</body>
+</html>
