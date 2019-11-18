@@ -42,5 +42,5 @@ let email = "robin@gmail.com";
 // {
 //   sellingPrice-=sellingPrice*decrement*
   
-}
+
 

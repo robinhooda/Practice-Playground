@@ -36,8 +36,8 @@ let students=['Robin','Rohan','Rakesh'];
 students.forEach(printList);
 
 function printList(name,num){
-    console.log(`Student ${num+1}:${name}\n`);
-    
+    // console.log(`Student ${num+1}:${name}\n`);
+    document.write(`Student ${num+1}:${name}<br>`)    
 }
 
 
