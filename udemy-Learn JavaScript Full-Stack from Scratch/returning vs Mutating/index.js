@@ -12,7 +12,8 @@
 
         // console.log(students.push({name:"Rohan",qualification:'M.Tech',percentage:"72"}));
         students.push({name:"Rohan",qualification:'M.Tech',percentage:"72"});
-        
+//forEach function
+   
         // students.foreach(y);
         // function y(x){
         //     console.log(`Name : ${x.name} have secured ${x.percentage} in ${x.qualification}`);
