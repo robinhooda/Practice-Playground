@@ -1,4 +1,4 @@
-// Scope & context- part -1 
+// Scope
    // This will prints name as Robin
         // let myName = "Robin";
         // function printName(){
