@@ -6,7 +6,7 @@ let students = [
     { name:"Rakesh", qualification: "MCA", percentage:"69"},
     {name:"Ranjit",qualification:'MCA',percentage:"71"}
 ];
-console.log(students);
+// console.log(students);
 
 // console.log(students.push({name:"Rohan",qualification:'M.Tech',percentage:"72"}));
 students.push({name:"Rohan",qualification:'M.Tech',percentage:"72"});
@@ -15,5 +15,15 @@ students.push({name:"Rohan",qualification:'M.Tech',percentage:"72"});
 // function y(x){
 //     console.log(`Name : ${x.name} have secured ${x.percentage} in ${x.qualification}`);
 // }
-console.log(students);
+// console.log(students);
+
+//map function
+
+let nameDisplay = students.map(nameOnly);
+
+function nameOnly(person){
+    return person.qualification;
+}
+
+console.log(nameDisplay);
 
