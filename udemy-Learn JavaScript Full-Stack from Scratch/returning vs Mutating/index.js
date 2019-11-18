@@ -41,12 +41,18 @@
             return candidate.percentage > 65;
         }
 
-        let candidateNameDisplay = students.filter(criteriaQualification).filter(criteriaPercentage);
+        let candidateDisplay = students.filter(criteriaQualification).filter(criteriaPercentage);
+        console.log( candidateDisplay );
+        
+// map & filter function
+
+        let candidateNameDisplay =
+         students.filter(criteriaQualification)
+                 .filter(criteriaPercentage)
+                 .map(nameOnly);
         console.log( candidateNameDisplay );
-        
 
-
-        
+                
 
 
 
