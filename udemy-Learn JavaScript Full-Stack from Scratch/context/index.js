@@ -37,11 +37,11 @@ let orderData = {
 // console.log(this);
 
 orderData.customerMessageOnSuccessfullDelivery();
-
-function paymentMode(){
-     console.log(this.customerName+" have to pay by cash");  
-}
-paymentMode.call(orderData);
+//call function
+     function paymentMode(){
+          console.log(this.customerName+" have to pay by cash");  
+     }
+     paymentMode.call(orderData);
 
 
 
