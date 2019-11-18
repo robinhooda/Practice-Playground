@@ -15,19 +15,31 @@
     //     return x*4
     // }
 // example function that returns a function
-    function createMultiplier(multiplier){
-        return function(x){
-            return x* multiplier
-        }
-    }
+    // function createMultiplier(multiplier){
+    //     return function(x){
+    //         return x* multiplier
+    //     }
+    // }
 
-    let doubleMe = createMultiplier(2)
-    let tripleMe = createMultiplier(3)
-    let quadrupleMe = createMultiplier(4)
+    // let doubleMe = createMultiplier(2)
+    // let tripleMe = createMultiplier(3)
+    // let quadrupleMe = createMultiplier(4)
 
-    document.write(doubleMe(10)+"<br>")
-    document.write(tripleMe(10))
-    document.write(quadrupleMe(10))
+    // document.write(doubleMe(10)+"<br>")
+    // document.write(tripleMe(10))
+    // document.write(quadrupleMe(10))
     
+
+// foreach
+
+let students=['Robin','Rohan','Rakesh'];
+students.forEach(printList);
+
+function printList(name,num){
+    console.log(`Student ${num+1}:${name}\n`);
+    
+}
+
+
 
 
