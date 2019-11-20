@@ -10,10 +10,13 @@ myForm.addEventListener("submit",(e) => {
 }) 
 
 function addItem(x){
-     let myListItems = `<li> ${x}<button>Delete</button></li>`
+     let myListItems = `<li> ${x}<button onclick="deleteItem()">Delete</button></li>`
      myList.insertAdjacentHTML("beforeend",myListItems)
      myField.value = ""
+}
 
+function deleteItem(){
+     alert("item deleted")
 }
 
 
