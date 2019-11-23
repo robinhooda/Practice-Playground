@@ -1,9 +1,5 @@
-let age = 17
-
-if(age>18)
-{
-    console.log("you are eligible");
-}
-else{
-    console.log("you are not eligible");
-}
+let http = require("http")
+let ourApp = http.createServer(function (req,res){
+   res.end("hello welcome")
+})
+ourApp.listen(4567)
