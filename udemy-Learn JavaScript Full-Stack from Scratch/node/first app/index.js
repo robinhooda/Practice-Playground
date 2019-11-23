@@ -7,6 +7,7 @@ let ourApp = http.createServer(function (req,res){
     if (req.url == "/about"){
         res.end("Thanks for visiting about us page")
     }
-       
+    res.end("error")
+
 })
 ourApp.listen(4567)
