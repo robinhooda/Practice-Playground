@@ -14,7 +14,7 @@ ourApp.get('/',function ( req, res) {
 })
 
 ourApp.post('/answer',function( req, res){
-    if(req.body.cityValue=="ghy"){
+    if(req.body.cityValue.toUpperCase() =="GHY"){
         res.send(`
             <p>Congratulations, your answer is correct </p>
             <a href="/">Back to homepage</a>
@@ -30,7 +30,7 @@ ourApp.post('/answer',function( req, res){
 
 ourApp.get('/answer',function( req, res){
     res.send("Sorry, please try again by filling the form")
-
 })
+
 ourApp.listen(3000)
 
