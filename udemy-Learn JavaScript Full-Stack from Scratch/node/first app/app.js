@@ -9,5 +9,8 @@ ourApp.get('/',function ( req, res) {
     </form>
     `)
 })
+ourApp.post('/answer',function( req, res){
+    res.send("thanks for submitting form")
+})
 ourApp.listen(3000)
 
