@@ -1,5 +1,8 @@
 let express = require("express")
 let ourApp = express()
+
+ourApp.use(express.urlencoded({extended: false}))
+
 ourApp.get('/',function ( req, res) {
     res.send(`
     <form action="/answer" method="POST">
@@ -11,12 +14,23 @@ ourApp.get('/',function ( req, res) {
 })
 
 ourApp.post('/answer',function( req, res){
-    res.send("thanks for submitting form")
+    if(req.body.cityValue=="ghy"){
+        res.send(`
+            <p>Congratulations, your answer is correct </p>
+            <a href="/">Back to homepage</a>
+        `)
+    }
+    else{
+        res.send(`
+        <p>Sorry, your answer is incorrect </p>
+        <a href="/">Back to homepage</a>
+    `)
+    }
 })
 
 ourApp.get('/answer',function( req, res){
-    res.send("Please try again by filling the form")
-})
+    res.send("Sorry, please try again by filling the form")
 
+})
 ourApp.listen(3000)
 
