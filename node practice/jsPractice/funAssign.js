@@ -1,4 +1,4 @@
-var flag=0;
+let flag=0;
 let getMyGrade = function(marksSecured, totalMarks=100){
     if(Number.isInteger(marksSecured)&& Number.isInteger(totalMarks)){
 
@@ -24,7 +24,7 @@ let getMyGrade = function(marksSecured, totalMarks=100){
     }
 
  }
- let myresult= getMyGrade(234,400);
+let myresult= getMyGrade(234,400);
 if(!flag){
     console.log(myresult)
 }
